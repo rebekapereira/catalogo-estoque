@@ -3,7 +3,7 @@
 Este projeto simula o sistema interno de uma pequena loja, permitindo cadastrar produtos, registrar entrada e saída de mercadorias, gerar alertas de estoque baixo e emitir relatórios.
 
 # Equipe
-Clarissy da Silva Canuto
+Clarissy da Silva Canuto\n
 Júlia Rodrigues Felizardo
 Rebeka de jesus Pereira
 Thiago Batista de Souza
