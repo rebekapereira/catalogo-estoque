@@ -6,7 +6,7 @@ Este projeto simula o sistema interno de uma pequena loja, permitindo cadastrar 
 Clarissy da Silva Canuto; 
 Júlia Rodrigues Felizardo; 
 Rebeka de jesus Pereira;
-Thiago Batista de Souza;
+Thiago Batista de Sousa;
 
 
 
