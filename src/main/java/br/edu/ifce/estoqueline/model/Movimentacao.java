@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Movimentacao {
     private Long id;
-    private String tipo; // "Entrada" ou "Saída"
+    private String tipo; 
     private String produto;
     private int quantidade;
     private LocalDate data;
@@ -31,4 +31,19 @@ public class Movimentacao {
     public void setProduto(String produto) { this.produto = produto; }
     public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
     public void setData(LocalDate data) { this.data = data; }
+
+    public Object getIdMovimentacao() {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'getIdMovimentacao'");
+    }
+
+    public Object getCodigo() {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'getCodigo'");
+    }
+
+    public void setCodigo(Object codigo) {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'setCodigo'");
+    }
 }
