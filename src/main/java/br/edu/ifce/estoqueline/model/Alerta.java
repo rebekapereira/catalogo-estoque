@@ -1,5 +1,6 @@
 package br.edu.ifce.estoqueline.model;
 
+
 public class Alerta {
     private Long id;
     private String produto;

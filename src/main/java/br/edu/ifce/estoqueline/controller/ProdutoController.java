@@ -30,7 +30,7 @@ public class ProdutoController {
 
     @DeleteMapping("/{id}")
     public String remover(@PathVariable Long id) {
-        produtos.removeIf(p -> p.getid().equals(id));
+        //produtos.removeIf(p -> p.getid().equals(id));
         return "Produto removido!";
     }
 }

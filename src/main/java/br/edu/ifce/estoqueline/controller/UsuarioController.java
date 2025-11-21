@@ -34,11 +34,11 @@ public class UsuarioController {
     @PostMapping("/{id}")
     public Usuario atualizar(@PathVariable Long id, @RequestBody Usuario usuarioAtualizado){
         for (Usuario a : usuarios){
-            if(a.getid().equals(id)){
-                a.setnome(usuarioAtualizado.getnome());
-                a.setemail(usuarioAtualizado.getemail());
-                a.settelefone(usuarioAtualizado.gettelefone());
-                a.setcargo(usuarioAtualizado.getcargo());
+            if(a.getId_usuario().equals(id)){
+                a.setNome(usuarioAtualizado.getNome());
+                a.setEmail(usuarioAtualizado.getEmail());
+                a.setTelefone(usuarioAtualizado.getTelefone());
+                a.setCargo(usuarioAtualizado.getCargo());
                 return a;
             }
         }
@@ -46,7 +46,7 @@ public class UsuarioController {
     }
     @DeleteMapping("/{id}")
     public String remover(@PathVariable Long id){
-        usuarios.removeIf(u -> u.getid().equals(id));
+        usuarios.removeIf(u -> u.getId_usuario().equals(id));
         return "Usuario removido";
     }
 

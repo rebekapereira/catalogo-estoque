@@ -1,47 +1,54 @@
 package br.edu.ifce.estoqueline.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "produto")
 public class Produto {
-    private Long id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idProduto;
+
     private String nome;
     private int codigo;
     private String descricao;
     private double preco;
     private int quantidade;
 
-    public Produto () {}
+    public Produto() {}
 
-    public Produto(Long id, String nome, int codigo, String descricao, double preco, int quantidade){
-
-    this.id = id;
-    this.nome = nome;
-    this.codigo = codigo;
-    this.descricao = descricao;
-    this.preco = preco;
-    this.quantidade = quantidade;
+    public Produto(Long id, String nome, int codigo, String descricao, double preco, int quantidade) {
+        this.idProduto = id;
+        this.nome = nome;
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.quantidade = quantidade;
     }
 
-public Long getid() {return id;}
+    public Long getId() { return idProduto; }
+    public void setId(Long id) { this.idProduto = id; }
 
-public String getnome() {return nome;}
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 
-public int getcodigo(){ return codigo;}
+    public int getCodigo() { return codigo; }
+    public void setCodigo(int codigo) { this.codigo = codigo; }
 
-public String getdescricao(){ return descricao;}
+    public String getDescricao() { return descricao; }
+    public void setDescricao(String descricao) { this.descricao = descricao; }
 
-public double getpreco(){ return preco;}
+    public double getPreco() { return preco; }
+    public void setPreco(double preco) { this.preco = preco; }
 
-public int getquantidade(){return quantidade;}
+    public int getQuantidade() { return quantidade; }
+    public void setQuantidade(int quantidade) { this.quantidade = quantidade; 
 
-public void setid(Long id){this.id = id;}
-
-public void setnome(String nome){ this.nome = nome;}
-
-public void setcodigo(int codigo){ this.codigo = codigo;}
-
-public void setdescricao(String descricao){ this.descricao = descricao;}
-
-public void setpreco(double preco){ this.preco = preco;}
-
-public void setquantidade(int quantidade){ this.quantidade = quantidade;}
-  
+    }
 }
